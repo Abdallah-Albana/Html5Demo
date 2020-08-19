@@ -1,0 +1,185 @@
+    @charset "UTF-8";
+    /**Reset**/
+    *,
+    *::before,
+    *::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+    /**Main style**/
+    html{
+        font-family: 'Recursive', sans-serif;
+        line-height: 1.7rem;
+    }
+    ul{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+    /**utilties**/
+    .container{
+        width: 80%;
+        margin: auto;
+        padding: 0 20px;
+    }
+    .text-center{
+        text-align: center;
+    }
+
+    .bg-color{
+        background-color: #2f2f2f;
+    }
+    .text-primary{
+        color: #fed136;
+    }
+ 
+    .bg-primary{
+        background-color:#fed136 ;
+        
+    }
+    .text-white{
+        color: #fff;
+    }
+/**navbar**/
+@font-face{
+    font-family: RedRose-Regular;
+    src: url('../fonts/RedRose-Regular.ttf');
+}
+.navbar,
+ .nav-items{
+    display: flex;
+    justify-content: space-between;
+}
+ .logo a{
+    color: #fed136;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.links ul li{
+    display: inline-block;
+    padding: 0 8px;
+}
+.links ul li a:hover{
+    color: #fed136;
+
+}
+/**showcase area**/
+.showcase{
+    background-image: url(../Images/services-1.png);
+    background-position: center center;
+    height: 695px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.showcase .showcase-text{
+    padding: 140px;
+}
+.showcase .showcase-text .subheading{
+    word-spacing: 8px;
+    padding: 30px 0;
+    font-size: 1rem;
+    font-weight: 600px;
+    font-style: italic;
+    text-shadow: #fff;
+  
+}
+ .showcase .showcase-text hr,
+ .Services .Services-text hr,
+ .About hr,
+ .portfolio hr,
+ .contact hr{
+    width: 5%;
+    margin: 8px auto;
+    border: #fed136 2px solid;
+}
+.showcase .showcase-text .mashead-heading{
+    word-spacing: 12px;
+    padding: 35px 0;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #fff;
+    text-transform: uppercase;
+}
+.showcase .showcase-text button,
+.About button{
+   border-radius: 10px;
+   margin-top: 20px;
+   padding: 12px;
+   font-size:1rem;
+   border: none;
+}
+.showcase .showcase-text button,
+.About button:hover{
+    background-color: #2f2f2f;
+    color: #fed136;
+}
+/**Services**/
+.Services{
+   margin-top: 70px;
+}
+.Services .row{
+    display: flex;
+    margin: 50px auto;
+}
+.Services .row .col .icon{
+border-radius: 50%;
+padding: 35px;
+}
+.Services.row.col h3{
+margin: 25px 0;
+font-size: 3rem;
+}
+/**About**/
+.About {
+    padding: 85px;
+    margin-top: 25px; 
+}
+
+
+/**Portfolio**/
+.portfolio ,
+.contact{
+    margin-top: 100px;
+}
+.portfolio h2{
+    font-size: 1.8rem;
+}
+.portfolio .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.portfolio .row .col{
+    margin: -6px 0;
+    
+}
+.portfolio p{
+    margin-bottom: 12px;
+    margin-top: 6px;
+}
+.portfolio .row .col img:hover{
+    opacity: .8;
+}
+/**contact**/
+
+.contact .col {
+    display: flex;
+    justify-content: space-between;
+   margin-left: 150px;
+   margin-right: 150px;
+}
+
+.contact p{
+    margin-bottom: 40px ;
+}
+
+.contact .row .col a{
+    color: #2f2f2f
+}
+
+
